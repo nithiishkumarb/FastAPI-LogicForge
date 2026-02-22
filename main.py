@@ -63,3 +63,6 @@ async def delete_book(book_title:str):
             break
     return {"message":"Book deleted successfully"}
 
+@app.get("")
+async def root():
+    return {"message":"Welcome to LogicForge"}
